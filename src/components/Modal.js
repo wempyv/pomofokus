@@ -83,6 +83,7 @@ const Modal = () => {
                         <label>pomodoro</label>
                         <input
                           type="number"
+                          autocomplete="off"
                           name="work"
                           onChange={handleChange}
                           value={newTimer.work}
@@ -94,6 +95,7 @@ const Modal = () => {
                       <div className="input-form">
                         <label>short break</label>
                         <input
+                          autocomplete="off"
                           type="number"
                           name="shortBreak"
                           onChange={handleChange}
@@ -108,6 +110,7 @@ const Modal = () => {
                         <input
                           type="number"
                           name="longBreak"
+                          autocomplete="off"
                           onChange={handleChange}
                           value={newTimer.long}
                           min="1"
@@ -119,7 +122,9 @@ const Modal = () => {
               </div>
             </div>
             <div className="modal-footer">
-            {openModal && <span className="m-auto">Enjoy your time &#128076;</span>}
+              {openModal && (
+                <span className="m-auto">Enjoy your time &#128076;</span>
+              )}
               {!openModal && (
                 <button type="submit" className="btn btn-success">
                   Apply
