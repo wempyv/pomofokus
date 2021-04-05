@@ -88,6 +88,7 @@ const Modal = () => {
                           onChange={handleChange}
                           value={newTimer.work}
                           min="1"
+                          required
                         />
                       </div>
                     </div>
@@ -101,6 +102,7 @@ const Modal = () => {
                           onChange={handleChange}
                           value={newTimer.short}
                           min="1"
+                          required
                         />
                       </div>
                     </div>
@@ -114,6 +116,7 @@ const Modal = () => {
                           onChange={handleChange}
                           value={newTimer.long}
                           min="1"
+                          required
                         />
                       </div>
                     </div>
